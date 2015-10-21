@@ -1,0 +1,9 @@
+*/.DS_Store
+.DS_Store
+
+TestCoreData/TestCoreData.xcodeproj/xcuserdata/*
+TestCoreData/TestCoreData.xcodeproj/project.xcworkspace/xcuserdata/*
+TestCoreData/TestCoreData.xcodeproj/project.xcworkspace/xcshareddata/*
+TestCoreData/TestCoreData.xcworkspace/xcuserdata/*
+TestCoreData/TestCoreData.xcworkspace/xcshareddata/*
+TestCoreData/Pods/Pods.xcodeproj/xcuserdata/*

@@ -10,16 +10,40 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: -
+    // MARK: Property
+    
+    @IBOutlet weak var displayTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let dataDic = fetchDataFromCoreData()
+        
+        displayDataInTextView(dataDic)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - Fetch Data From Core Data
+    func fetchDataFromCoreData() -> NSArray {
+        let companyPath = NSBundle.mainBundle().pathForResource("Company", ofType: "plist")
+        let companyDataArr = NSMutableArray.init(contentsOfFile: companyPath!)
+        
+        
+        return companyDataArr!
+    }
+    
+    
+    
+    // MARK: - Display Data in TextView
+    func displayDataInTextView(data:AnyObject) {
+        let dataStr = data.description
+        
+        self.displayTextView.text = dataStr.stringByRemovingPercentEncoding
+    }
 
 }
 

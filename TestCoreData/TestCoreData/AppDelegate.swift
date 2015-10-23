@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+import MagicalRecord
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Intial Core Data
-        
+        MagicalRecord.setupAutoMigratingCoreDataStack()
         
         // 显示launch 页面 3秒
         NSThread.sleepForTimeInterval(1);

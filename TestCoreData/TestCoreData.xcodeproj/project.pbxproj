@@ -37,6 +37,8 @@
 		C60A8E351BD7A862001B5CB0 /* Company.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Company.plist; sourceTree = "<group>"; };
 		C60A8E3E1BD7ADC5001B5CB0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C60A8E401BD7ADF6001B5CB0 /* VersionDesign.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = VersionDesign.rtfd; sourceTree = "<group>"; };
+		C6606D2E1BD9E550009C01A4 /* TestCoreData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCoreData-Bridging-Header.h"; sourceTree = "<group>"; };
+		C6606D321BD9E5EA009C01A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,8 @@
 		C60A8E3A1BD7A8B1001B5CB0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6606D2E1BD9E550009C01A4 /* TestCoreData-Bridging-Header.h */,
+				C6606D321BD9E5EA009C01A4 /* PrefixHeader.pch */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -157,6 +161,7 @@
 		C60A8E0D1BD782C7001B5CB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ArthurWang;
 				TargetAttributes = {
@@ -376,10 +381,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCoreData/Support Files/TestCoreData-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -390,10 +398,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestCoreData/Support Files/TestCoreData-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

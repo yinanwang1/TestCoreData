@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C605590B1BD8898F00FE851D /* Department+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60559091BD8898F00FE851D /* Department+CoreDataProperties.swift */; };
+		C605590C1BD8898F00FE851D /* Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = C605590A1BD8898F00FE851D /* Department.swift */; };
 		C60A8E191BD782C7001B5CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A8E181BD782C7001B5CB0 /* AppDelegate.swift */; };
 		C60A8E1B1BD782C7001B5CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60A8E1A1BD782C7001B5CB0 /* ViewController.swift */; };
 		C60A8E1E1BD782C7001B5CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E1C1BD782C7001B5CB0 /* Main.storyboard */; };
 		C60A8E231BD782C7001B5CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E221BD782C7001B5CB0 /* Assets.xcassets */; };
 		C60A8E261BD782C7001B5CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E241BD782C7001B5CB0 /* LaunchScreen.storyboard */; };
-		C60A8E371BD7A862001B5CB0 /* TestCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C60A8E321BD7A862001B5CB0 /* TestCoreData.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
-		C60A8E381BD7A862001B5CB0 /* Company.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E351BD7A862001B5CB0 /* Company.plist */; settings = {ASSET_TAGS = (); }; };
-		C60A8E3F1BD7ADC5001B5CB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E3E1BD7ADC5001B5CB0 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C60A8E411BD7ADF6001B5CB0 /* VersionDesign.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E401BD7ADF6001B5CB0 /* VersionDesign.rtfd */; settings = {ASSET_TAGS = (); }; };
+		C60A8E371BD7A862001B5CB0 /* TestCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C60A8E321BD7A862001B5CB0 /* TestCoreData.xcdatamodeld */; };
+		C60A8E381BD7A862001B5CB0 /* Company.plist in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E351BD7A862001B5CB0 /* Company.plist */; };
+		C60A8E3F1BD7ADC5001B5CB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E3E1BD7ADC5001B5CB0 /* Default-568h@2x.png */; };
+		C60A8E411BD7ADF6001B5CB0 /* VersionDesign.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = C60A8E401BD7ADF6001B5CB0 /* VersionDesign.rtfd */; };
 		CE02C659E4CF708EEA598F16 /* Pods_TestCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69392655FC33B1B6C1344C63 /* Pods_TestCoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		0643F16B58A21926D549D66E /* Pods-TestCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreData.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreData/Pods-TestCoreData.release.xcconfig"; sourceTree = "<group>"; };
 		6207015A1052582C012A269E /* Pods-TestCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCoreData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCoreData/Pods-TestCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		69392655FC33B1B6C1344C63 /* Pods_TestCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60559091BD8898F00FE851D /* Department+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Department+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C605590A1BD8898F00FE851D /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
 		C60A8E151BD782C7001B5CB0 /* TestCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60A8E181BD782C7001B5CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C60A8E1A1BD782C7001B5CB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +35,6 @@
 		C60A8E251BD782C7001B5CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60A8E331BD7A862001B5CB0 /* TestCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCoreData.xcdatamodel; sourceTree = "<group>"; };
 		C60A8E351BD7A862001B5CB0 /* Company.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Company.plist; sourceTree = "<group>"; };
-		C60A8E3B1BD7A8D0001B5CB0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C60A8E3E1BD7ADC5001B5CB0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C60A8E401BD7ADF6001B5CB0 /* VersionDesign.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = VersionDesign.rtfd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				C60A8E321BD7A862001B5CB0 /* TestCoreData.xcdatamodeld */,
+				C60559091BD8898F00FE851D /* Department+CoreDataProperties.swift */,
+				C605590A1BD8898F00FE851D /* Department.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -110,7 +115,6 @@
 		C60A8E3A1BD7A8B1001B5CB0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C60A8E3B1BD7A8D0001B5CB0 /* PrefixHeader.pch */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -250,6 +254,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C60A8E1B1BD782C7001B5CB0 /* ViewController.swift in Sources */,
+				C605590B1BD8898F00FE851D /* Department+CoreDataProperties.swift in Sources */,
+				C605590C1BD8898F00FE851D /* Department.swift in Sources */,
 				C60A8E371BD7A862001B5CB0 /* TestCoreData.xcdatamodeld in Sources */,
 				C60A8E191BD782C7001B5CB0 /* AppDelegate.swift in Sources */,
 			);
@@ -303,6 +309,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/arthurwang/SVN/Mines/TestCoreData/TestCoreData/TestCoreData/Support Files/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -346,6 +354,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/arthurwang/SVN/Mines/TestCoreData/TestCoreData/TestCoreData/Support Files/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -365,10 +375,12 @@
 			baseConfigurationReference = 6207015A1052582C012A269E /* Pods-TestCoreData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = TestCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,10 +389,12 @@
 			baseConfigurationReference = 0643F16B58A21926D549D66E /* Pods-TestCoreData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = TestCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurWang.TestCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

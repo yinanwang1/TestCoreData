@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         let companyPath = NSBundle.mainBundle().pathForResource("Company", ofType: "plist")
         let companyDataArr = NSMutableArray.init(contentsOfFile: companyPath!)
         
-        
         return companyDataArr!
     }
     
@@ -44,6 +43,11 @@ class ViewController: UIViewController {
         
         self.displayTextView.text = dataStr.stringByRemovingPercentEncoding
     }
-
+    
+    // MARK: - Save to Core Data
+    func saveData(data: AnyObject) {
+        
+    }
+    
 }
 

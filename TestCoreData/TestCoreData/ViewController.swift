@@ -8,6 +8,9 @@
 
 import UIKit
 
+import MagicalRecord
+
+
 class ViewController: UIViewController {
 
     // MARK: -
@@ -15,12 +18,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayTextView: UITextView!
     
+    var dataSourceTest: [AnyObject] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dataDic = fetchDataFromCoreData()
+        let dataArr = fetchDataFromCoreData()
         
-        displayDataInTextView(dataDic)
+        displayDataInTextView(dataArr)
+        
+        self.dataSourceTest = dataArr as [AnyObject]!
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,9 +52,33 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Save to Core Data
-    func saveData(data: AnyObject) {
+    func saveData(data: [AnyObject]) {
+        
+        MagicalRecord.saveWithBlockAndWait { (context:NSManagedObjectContext!) -> Void in
+            
+            for object in data {
+                let departmentEntity = Department.MR_createEntity()
+                departmentEntity.name = object as? String
+            }
+            
+            print("Save to Core data has done.")
+        }
+        
+        // display all data in core data
+        let allDataArr = Department.MR_findAll()
+        self.displayDataInTextView(allDataArr)
+    }
+    
+    
+    
+    // MARK: - Target Methods
+    
+    @IBAction func onClickInsertBtn(sender: AnyObject) {
+        
+        self.saveData(self.dataSourceTest)
         
     }
+    
     
 }
 

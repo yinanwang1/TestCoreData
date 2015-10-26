@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gJf-Ow-STY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gJf-Ow-STY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,21 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="测试测试" translatesAutoresizingMaskIntoConstraints="NO" id="gjY-Bb-ps3">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="133" width="600" height="467"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.94462274241781019" blue="0.55113059206861603" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcy-tF-TU4">
+                                <rect key="frame" x="240" y="84" width="120" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SB7-qb-EET"/>
+                                    <constraint firstAttribute="width" constant="120" id="WCb-xG-fMj"/>
+                                </constraints>
+                                <state key="normal" title="插入数据到数据库"/>
+                                <connections>
+                                    <action selector="onClickInsertBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sOe-nq-sJ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Kcy-tF-TU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3NI-r9-meB"/>
                             <constraint firstItem="gjY-Bb-ps3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5qi-E7-iqE"/>
+                            <constraint firstItem="gjY-Bb-ps3" firstAttribute="top" secondItem="Kcy-tF-TU4" secondAttribute="bottom" constant="19" id="MU8-93-nwY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gjY-Bb-ps3" secondAttribute="bottom" id="SMF-Sb-kzT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gjY-Bb-ps3" secondAttribute="trailing" constant="-20" id="d7r-QW-W32"/>
-                            <constraint firstItem="gjY-Bb-ps3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qEg-Ze-7P9"/>
+                            <constraint firstItem="Kcy-tF-TU4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ipE-VB-WdF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Core Data" id="Fk4-Do-hPN"/>

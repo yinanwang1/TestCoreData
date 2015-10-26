@@ -21,10 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Intial Core Data
-        MagicalRecord.setupAutoMigratingCoreDataStack()
-        
-        // 显示launch 页面 3秒
-        NSThread.sleepForTimeInterval(1);
+        MagicalRecord.setupCoreDataStackWithStoreNamed("TestCoreData.sqlite")
         
         return true
     }
@@ -51,6 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+        
+        MagicalRecord.cleanUp()
     }
 
     // MARK: - Core Data stack
@@ -71,7 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
         // Create the coordinator and store
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("SingleViewCoreData.sqlite")
+        let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("TestCoreData.sqlite")
         var failureReason = "There was an error creating or loading the application's saved data."
         do {
             let options = [NSInferMappingModelAutomaticallyOption: true, NSMigratePersistentStoresAutomaticallyOption: true];

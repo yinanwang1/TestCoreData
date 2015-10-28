@@ -70,6 +70,9 @@ class ViewController: UIViewController {
         // display all data in core data
         let allDataArr = Department.MR_findAll()
         self.displayDataInTextView(allDataArr)
+        
+        let context:NSManagedObjectContext = NSManagedObjectContext.MR_rootSavingContext()
+        context.MR_saveToPersistentStoreAndWait()
     }
     
     

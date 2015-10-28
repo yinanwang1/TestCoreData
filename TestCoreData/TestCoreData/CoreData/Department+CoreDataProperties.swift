@@ -2,7 +2,7 @@
 //  Department+CoreDataProperties.swift
 //  TestCoreData
 //
-//  Created by ArthurWang on 15/10/22.
+//  Created by ArthurWang on 15/10/28.
 //  Copyright © 2015年 ArthurWang. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,5 +15,6 @@ import CoreData
 extension Department {
 
     @NSManaged var name: String?
+    @NSManaged var number: NSNumber?
 
 }

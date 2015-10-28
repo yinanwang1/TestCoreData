@@ -37,6 +37,7 @@
 		C60A8E351BD7A862001B5CB0 /* Company.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Company.plist; sourceTree = "<group>"; };
 		C60A8E3E1BD7ADC5001B5CB0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C60A8E401BD7ADF6001B5CB0 /* VersionDesign.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = VersionDesign.rtfd; sourceTree = "<group>"; };
+		C62C6CC91BE0951500886BBB /* TestCoreData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TestCoreData 2.xcdatamodel"; sourceTree = "<group>"; };
 		C6606D2E1BD9E550009C01A4 /* TestCoreData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCoreData-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6606D321BD9E5EA009C01A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -439,9 +440,10 @@
 		C60A8E321BD7A862001B5CB0 /* TestCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C62C6CC91BE0951500886BBB /* TestCoreData 2.xcdatamodel */,
 				C60A8E331BD7A862001B5CB0 /* TestCoreData.xcdatamodel */,
 			);
-			currentVersion = C60A8E331BD7A862001B5CB0 /* TestCoreData.xcdatamodel */;
+			currentVersion = C62C6CC91BE0951500886BBB /* TestCoreData 2.xcdatamodel */;
 			path = TestCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

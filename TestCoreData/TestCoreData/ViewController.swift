@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         
         let dataArr = fetchDataFromCoreData()
         
-        displayDataInTextView(dataArr)
+        let allDataArr = Department.MR_findAll()
+        displayDataInTextView(allDataArr)
         
         self.dataSourceTest = dataArr as [AnyObject]!
     }
@@ -57,8 +58,10 @@ class ViewController: UIViewController {
         MagicalRecord.saveWithBlockAndWait { (context:NSManagedObjectContext!) -> Void in
             
             for object in data {
-                let departmentEntity = Department.MR_createEntity()
-                departmentEntity.name = object as? String
+                let departmentEntity = Department.MR_createEntityInContext(context)
+                let dic = object as! Dictionary<String, AnyObject>
+                departmentEntity.name = dic["name"] as? String
+                departmentEntity.number = dic["number"] as? NSNumber
             }
             
             print("Save to Core data has done.")

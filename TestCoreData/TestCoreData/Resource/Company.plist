@@ -2,8 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>营销部</string>
-	<string>市场部</string>
-	<string>生管部</string>
+	<dict>
+		<key>name</key>
+		<string>营销部</string>
+		<key>number</key>
+		<integer>100</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>市场部</string>
+		<key>number</key>
+		<integer>200</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>生管部</string>
+		<key>number</key>
+		<integer>300</integer>
+	</dict>
 </array>
 </plist>

@@ -33,11 +33,9 @@ class DepartmentToDepartmentPolicy: NSEntityMigrationPolicy {
             
             let oldNumber = sInstance.valueForKey("number")
             let oldNumberStr = String(oldNumber!)
-            let manager = sInstance.valueForKey("manager")!
             let name = sInstance.valueForKey("name")!
             
             newObject.setValue(oldNumberStr, forKey: "number")
-            newObject.setValue(manager, forKey: "manager")
             newObject.setValue(name, forKey: "name")
             
             manager.associateSourceInstance(sInstance, withDestinationInstance: newObject, forEntityMapping: mapping)

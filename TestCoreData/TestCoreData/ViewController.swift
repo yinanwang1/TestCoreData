@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         let dataDic = fetchDataFromFile()
         
-        let allDataArr = Department.MR_findAll()
+        let allDataArr = Manager.MR_findAll()
         displayDataInTextView(allDataArr)
         
         self.dataSourceTest = dataDic
@@ -51,9 +51,16 @@ class ViewController: UIViewController {
         
         var dataStr = "/********/\n"
         
-        for object in data as! Array<Department> {
-            dataStr += object.descriptionSimple()
+        for object in data as! Array<Manager> {
+            
+            dataStr += "/***manager\(object.name!)**/\n"
+            
+            for departmentEntity in object.department! {
+                dataStr += (departmentEntity as! Department).descriptionSimple()
+            }
         }
+        
+        dataStr += "/********/\n"
         
         self.displayTextView.text = dataStr.stringByRemovingPercentEncoding
     }
@@ -69,7 +76,7 @@ class ViewController: UIViewController {
         }
         
         // display all data in core data
-        let allDataArr = Department.MR_findAll()
+        let allDataArr = Manager.MR_findAll()
         self.displayDataInTextView(allDataArr)
         
         let context:NSManagedObjectContext = NSManagedObjectContext.MR_rootSavingContext()

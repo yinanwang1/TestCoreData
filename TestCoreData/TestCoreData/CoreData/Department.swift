@@ -9,8 +9,19 @@
 import Foundation
 import CoreData
 
-class Department: NSManagedObject {
+class Department: NSManagedObject{
 
 // Insert code here to add functionality to your managed object subclass
+    
+    func descriptionSimple() -> String {
+        var description = "name is "
+            description +=  self.name!
+            description += "\n"
+            description += "number is "
+            description +=  (self.number?.stringValue)!.stringByRemovingPercentEncoding!
+            description += "\n\n\n"
+        
+        return description
+    }
 
 }

@@ -47,7 +47,12 @@ class ViewController: UIViewController {
     
     // MARK: - Display Data in TextView
     func displayDataInTextView(data:AnyObject) {
-        let dataStr = data.description
+        
+        var dataStr = "/********/"
+        
+        for object in data as! Array<Department> {
+            dataStr += object.descriptionSimple()
+        }
         
         self.displayTextView.text = dataStr.stringByRemovingPercentEncoding
     }

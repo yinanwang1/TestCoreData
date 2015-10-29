@@ -15,7 +15,7 @@ class Department: NSManagedObject{
     
     func descriptionSimple() -> String {
         var description = "name is "
-            description +=  self.name!
+            description +=  (nil != self.name) ? self.name! : ""
             description += "\n"
             description += "number is "
             description +=  (nil != self.number) ? self.number! : ""

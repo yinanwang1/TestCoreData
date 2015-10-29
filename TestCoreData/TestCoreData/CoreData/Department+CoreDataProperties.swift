@@ -36,9 +36,9 @@ class DepartmentToDepartmentPolicy: NSEntityMigrationPolicy {
             newObject.setValue(oldNumberStr, forKey: "number")
             
             manager.associateSourceInstance(sInstance, withDestinationInstance: newObject, forEntityMapping: mapping)
-        } else {
-            try
-                super.createDestinationInstancesForSourceInstance(sInstance, entityMapping: mapping, manager: manager)
         }
+        
+        try
+            super.createDestinationInstancesForSourceInstance(sInstance, entityMapping: mapping, manager: manager)
     }
 }

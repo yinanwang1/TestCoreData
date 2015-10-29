@@ -18,17 +18,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayTextView: UITextView!
     
-    var dataSourceTest: [AnyObject] = []
+    var dataSourceTest = NSDictionary()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dataArr = fetchDataFromCoreData()
+        let dataDic = fetchDataFromFile()
         
         let allDataArr = Department.MR_findAll()
         displayDataInTextView(allDataArr)
         
-        self.dataSourceTest = dataArr as [AnyObject]!
+        self.dataSourceTest = dataDic
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,11 +36,12 @@ class ViewController: UIViewController {
     }
 
     // MARK: - Fetch Data From Core Data
-    func fetchDataFromCoreData() -> NSArray {
+    func fetchDataFromFile() -> NSDictionary {
         let companyPath = NSBundle.mainBundle().pathForResource("Company", ofType: "plist")
-        let companyDataArr = NSMutableArray.init(contentsOfFile: companyPath!)
+        let companyDataDic = NSMutableDictionary.init(contentsOfFile: companyPath!)
         
-        return companyDataArr!
+        
+        return companyDataDic!
     }
     
     
@@ -58,16 +59,11 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Save to Core Data
-    func saveData(data: [AnyObject]) {
+    func saveData(data: NSDictionary) {
         
         MagicalRecord.saveWithBlockAndWait { (context:NSManagedObjectContext!) -> Void in
             
-            for object in data {
-                let departmentEntity = Department.MR_createEntityInContext(context)
-                let dic = object as! Dictionary<String, AnyObject>
-                departmentEntity.name = dic["name"] as? String
-                departmentEntity.number = dic["number"] as? NSNumber
-            }
+            Board.MR_importFromObject(data, inContext: context)
             
             print("Save to Core data has done.")
         }

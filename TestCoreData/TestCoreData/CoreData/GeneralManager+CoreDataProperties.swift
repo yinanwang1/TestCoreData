@@ -1,5 +1,5 @@
 //
-//  Department+CoreDataProperties.swift
+//  GeneralManager+CoreDataProperties.swift
 //  TestCoreData
 //
 //  Created by ArthurWang on 15/10/29.
@@ -12,10 +12,10 @@
 import Foundation
 import CoreData
 
-extension Department {
+extension GeneralManager {
 
     @NSManaged var name: String?
-    @NSManaged var number: NSNumber?
-    @NSManaged var manager: Manager?
+    @NSManaged var manager: NSSet?
+    @NSManaged var board: Board?
 
 }

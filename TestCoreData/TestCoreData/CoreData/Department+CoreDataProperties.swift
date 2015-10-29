@@ -31,7 +31,7 @@ class DepartmentToDepartmentPolicy: NSEntityMigrationPolicy {
             let newObject = NSEntityDescription.insertNewObjectForEntityForName(mapping.destinationEntityName!, inManagedObjectContext: manager.destinationContext)
             
             let oldNumber = sInstance.valueForKey("number")
-            let oldNumberStr = oldNumber?.string
+            let oldNumberStr = String(oldNumber!)
             
             newObject.setValue(oldNumberStr, forKey: "number")
             

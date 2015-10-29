@@ -25,7 +25,6 @@
 		C62C6CD51BE1BBFB00886BBB /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C6CD31BE1BBFB00886BBB /* Board+CoreDataProperties.swift */; };
 		C62C6CD61BE1BBFB00886BBB /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C6CD41BE1BBFB00886BBB /* Board.swift */; };
 		C6ADA3591BE206FB0002AC3E /* Model3TO4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA3581BE206FB0002AC3E /* Model3TO4.xcmappingmodel */; };
-		C6ADA35E1BE209170002AC3E /* DepartmentToDepartmentPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA35D1BE209170002AC3E /* DepartmentToDepartmentPolicy.swift */; };
 		CE02C659E4CF708EEA598F16 /* Pods_TestCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69392655FC33B1B6C1344C63 /* Pods_TestCoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		C6606D2E1BD9E550009C01A4 /* TestCoreData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCoreData-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6606D321BD9E5EA009C01A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C6ADA3581BE206FB0002AC3E /* Model3TO4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model3TO4.xcmappingmodel; sourceTree = "<group>"; };
-		C6ADA35D1BE209170002AC3E /* DepartmentToDepartmentPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentToDepartmentPolicy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				C6ADA3581BE206FB0002AC3E /* Model3TO4.xcmappingmodel */,
-				C6ADA35D1BE209170002AC3E /* DepartmentToDepartmentPolicy.swift */,
 			);
 			path = Mapping;
 			sourceTree = "<group>";
@@ -300,7 +297,6 @@
 				C60A8E371BD7A862001B5CB0 /* TestCoreData.xcdatamodeld in Sources */,
 				C62C6CD61BE1BBFB00886BBB /* Board.swift in Sources */,
 				C62C6CD51BE1BBFB00886BBB /* Board+CoreDataProperties.swift in Sources */,
-				C6ADA35E1BE209170002AC3E /* DepartmentToDepartmentPolicy.swift in Sources */,
 				C62C6CCE1BE1BBC400886BBB /* Manager.swift in Sources */,
 				C62C6CCD1BE1BBC400886BBB /* Manager+CoreDataProperties.swift in Sources */,
 				C62C6CD21BE1BBED00886BBB /* GeneralManager.swift in Sources */,

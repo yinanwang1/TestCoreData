@@ -122,7 +122,7 @@ cBIAAYagrxEBpQAHAAgAFwAzADQANQBDAEQARQBGAEcAYgBjAGQAagBrAHcAjQCOAI8AkACRAJIAkwCU
         <attribute name="userinfodata" type="binary">YnBsaXN0MDDUAQIDBAUGGhtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKUH
 CBESE1UkbnVsbNMJCgsMDhBXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6ENgAKhD4ADgARcbW9kZWxWZXJzaW9uUTTSFBUWF1okY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxlRGljdGlvbmFyeaMWGBlcTlNEaWN0aW9uYXJ5WE5TT2JqZWN0XxAPTlNLZXllZEFyY2hpdmVy0RwdVHJvb3SAAQgRGiMtMjc9Q0pSXWRmaGpsbnt9go2WrLC9xtjb4AAAAAAAAAEBAAAAAAAAAB4AAAAAAAAAAAAAAAAAAADi
 </attribute>
-        <attribute name="migrationpolicyclassname" type="string">DepartmentToDepartmentPolicy</attribute>
+        <attribute name="migrationpolicyclassname" type="string">TestCoreData.DepartmentToDepartmentPolicy</attribute>
         <attribute name="sourcename" type="string">Department</attribute>
         <attribute name="mappingtypename" type="string">Undefined</attribute>
         <attribute name="mappingnumber" type="int16">4</attribute>

@@ -18,7 +18,7 @@ class Department: NSManagedObject{
             description +=  self.name!
             description += "\n"
             description += "number is "
-            description +=  (self.number?.stringValue)!.stringByRemovingPercentEncoding!
+            description +=  (nil != self.number) ? (self.number?.stringValue)!.stringByRemovingPercentEncoding! : ""
             description += "\n\n\n"
         
         return description

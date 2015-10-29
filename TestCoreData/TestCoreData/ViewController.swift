@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     // MARK: - Display Data in TextView
     func displayDataInTextView(data:AnyObject) {
         
-        var dataStr = "/********/"
+        var dataStr = "/********/\n"
         
         for object in data as! Array<Department> {
             dataStr += object.descriptionSimple()

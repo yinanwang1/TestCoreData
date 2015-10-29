@@ -51,6 +51,7 @@
 		C62C6CD01BE1BBED00886BBB /* GeneralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralManager.swift; sourceTree = "<group>"; };
 		C62C6CD31BE1BBFB00886BBB /* Board+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Board+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C62C6CD41BE1BBFB00886BBB /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C62C6CD71BE1D06200886BBB /* TestCoreData 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TestCoreData 4.xcdatamodel"; sourceTree = "<group>"; };
 		C6606D2E1BD9E550009C01A4 /* TestCoreData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCoreData-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6606D321BD9E5EA009C01A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -465,11 +466,12 @@
 		C60A8E321BD7A862001B5CB0 /* TestCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C62C6CD71BE1D06200886BBB /* TestCoreData 4.xcdatamodel */,
 				C62C6CCA1BE1BA8C00886BBB /* TestCoreData 3.xcdatamodel */,
 				C62C6CC91BE0951500886BBB /* TestCoreData 2.xcdatamodel */,
 				C60A8E331BD7A862001B5CB0 /* TestCoreData.xcdatamodel */,
 			);
-			currentVersion = C62C6CCA1BE1BA8C00886BBB /* TestCoreData 3.xcdatamodel */;
+			currentVersion = C62C6CD71BE1D06200886BBB /* TestCoreData 4.xcdatamodel */;
 			path = TestCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

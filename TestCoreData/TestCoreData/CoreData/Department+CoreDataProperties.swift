@@ -15,7 +15,7 @@ import CoreData
 extension Department {
 
     @NSManaged var name: String?
-    @NSManaged var number: NSNumber?
+    @NSManaged var number: String?
     @NSManaged var manager: Manager?
 
 }

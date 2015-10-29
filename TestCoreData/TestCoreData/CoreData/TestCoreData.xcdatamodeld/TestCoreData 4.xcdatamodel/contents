@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Board" representedClassName=".Board" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="generalManager" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GeneralManager" inverseName="board" inverseEntity="GeneralManager" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="generalManagers"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="Department" representedClassName=".Department" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="manager" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Manager" inverseName="department" inverseEntity="Manager" syncable="YES"/>
+    </entity>
+    <entity name="GeneralManager" representedClassName=".GeneralManager" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Board" inverseName="generalManager" inverseEntity="Board" syncable="YES"/>
+        <relationship name="manager" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Manager" inverseName="generalManager" inverseEntity="Manager" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="managers"/>
+            </userInfo>
+        </relationship>
+    </entity>
+    <entity name="Manager" representedClassName=".Manager" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="department" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Department" inverseName="manager" inverseEntity="Department" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="departments"/>
+            </userInfo>
+        </relationship>
+        <relationship name="generalManager" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GeneralManager" inverseName="manager" inverseEntity="GeneralManager" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Board" positionX="9" positionY="63" width="128" height="75"/>
+        <element name="Department" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="GeneralManager" positionX="-9" positionY="45" width="128" height="90"/>
+        <element name="Manager" positionX="-36" positionY="27" width="128" height="90"/>
+    </elements>
+</model>

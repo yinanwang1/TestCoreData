@@ -23,11 +23,15 @@ class GeneralManagerToGeneralManagerPolicy: NSEntityMigrationPolicy {
     
     override func createRelationshipsForDestinationInstance(dInstance: NSManagedObject, entityMapping mapping: NSEntityMapping, manager: NSMigrationManager) throws {
         if dInstance.entity.name == "GeneralManager" {
-            let generalManagerEntity = dInstance as! GeneralManager
             
-            let departmentArr = Department.MR_findAll()
+            let fetch = NSFetchRequest.init(entityName: "Department")
+
+            let departmentArr = try manager.destinationContext.executeFetchRequest(fetch)
             
-            generalManagerEntity.department?.setByAddingObjectsFromArray(departmentArr)
+            let departmentSet = NSSet.init(array: departmentArr)
+            
+            dInstance.setValue(departmentSet, forKey: "department")
+            
         }
     }
     

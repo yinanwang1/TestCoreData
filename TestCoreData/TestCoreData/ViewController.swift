@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         let dataDic = fetchDataFromFile()
         
-        let allDataArr = Manager.MR_findAll()
+        let allDataArr = GeneralManager.MR_findAll()
         displayDataInTextView(allDataArr)
         
         self.dataSourceTest = dataDic
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         
         var dataStr = "/********/\n"
         
-        for object in data as! Array<Manager> {
+        for object in data as! Array<GeneralManager> {
             
             dataStr += "/***manager\(object.name!)**/\n"
             
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
         }
         
         // display all data in core data
-        let allDataArr = Manager.MR_findAll()
+        let allDataArr = GeneralManager.MR_findAll()
         self.displayDataInTextView(allDataArr)
         
         let context:NSManagedObjectContext = NSManagedObjectContext.MR_rootSavingContext()

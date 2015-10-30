@@ -56,6 +56,7 @@
 		C6606D2E1BD9E550009C01A4 /* TestCoreData-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCoreData-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6606D321BD9E5EA009C01A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C6ADA3581BE206FB0002AC3E /* Model3TO4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model3TO4.xcmappingmodel; sourceTree = "<group>"; };
+		C6ADA3631BE310A00002AC3E /* TestCoreData 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TestCoreData 5.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,12 +479,13 @@
 		C60A8E321BD7A862001B5CB0 /* TestCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				C6ADA3631BE310A00002AC3E /* TestCoreData 5.xcdatamodel */,
 				C62C6CD71BE1D06200886BBB /* TestCoreData 4.xcdatamodel */,
 				C62C6CCA1BE1BA8C00886BBB /* TestCoreData 3.xcdatamodel */,
 				C62C6CC91BE0951500886BBB /* TestCoreData 2.xcdatamodel */,
 				C60A8E331BD7A862001B5CB0 /* TestCoreData.xcdatamodel */,
 			);
-			currentVersion = C62C6CD71BE1D06200886BBB /* TestCoreData 4.xcdatamodel */;
+			currentVersion = C6ADA3631BE310A00002AC3E /* TestCoreData 5.xcdatamodel */;
 			path = TestCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -2,7 +2,7 @@
 //  GeneralManager+CoreDataProperties.swift
 //  TestCoreData
 //
-//  Created by ArthurWang on 15/10/29.
+//  Created by ArthurWang on 15/10/30.
 //  Copyright © 2015年 ArthurWang. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,7 +15,24 @@ import CoreData
 extension GeneralManager {
 
     @NSManaged var name: String?
-    @NSManaged var manager: NSSet?
     @NSManaged var board: Board?
+    @NSManaged var manager: NSSet?
+    @NSManaged var department: NSSet?
 
+}
+
+
+class GeneralManagerToGeneralManagerPolicy: NSEntityMigrationPolicy {
+    
+    override func createRelationshipsForDestinationInstance(dInstance: NSManagedObject, entityMapping mapping: NSEntityMapping, manager: NSMigrationManager) throws {
+        if dInstance.entity.name == "GeneralManager" {
+            let generalManagerEntity = dInstance as! GeneralManager
+            
+            let departmentArr = Department.MR_findAll()
+            
+            generalManagerEntity.department?.setByAddingObjectsFromArray(departmentArr)
+        }
+    }
+    
+    
 }

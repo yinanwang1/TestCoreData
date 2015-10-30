@@ -2,7 +2,7 @@
 //  Manager+CoreDataProperties.swift
 //  TestCoreData
 //
-//  Created by ArthurWang on 15/10/29.
+//  Created by ArthurWang on 15/10/30.
 //  Copyright © 2015年 ArthurWang. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,7 +15,6 @@ import CoreData
 extension Manager {
 
     @NSManaged var name: String?
-    @NSManaged var department: NSSet?
     @NSManaged var generalManager: GeneralManager?
 
 }

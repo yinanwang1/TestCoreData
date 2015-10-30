@@ -15,3 +15,21 @@ class GeneralManager: NSManagedObject {
 // Insert code here to add functionality to your managed object subclass
 
 }
+
+
+
+
+class GeneralManagerToGeneralManagerPolicy: NSEntityMigrationPolicy {
+    
+    override func createRelationshipsForDestinationInstance(dInstance: NSManagedObject, entityMapping mapping: NSEntityMapping, manager: NSMigrationManager) throws {
+        if dInstance.entity.name == "GeneralManager" {
+            let generalManagerEntity = dInstance as! GeneralManager
+            
+            let departmentArr = Department.MR_findAll()
+            
+            generalManagerEntity.department?.setByAddingObjectsFromArray(departmentArr)
+        }
+    }
+    
+    
+}

@@ -25,6 +25,7 @@
 		C62C6CD51BE1BBFB00886BBB /* Board+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C6CD31BE1BBFB00886BBB /* Board+CoreDataProperties.swift */; };
 		C62C6CD61BE1BBFB00886BBB /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62C6CD41BE1BBFB00886BBB /* Board.swift */; };
 		C6ADA3591BE206FB0002AC3E /* Model3TO4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA3581BE206FB0002AC3E /* Model3TO4.xcmappingmodel */; };
+		C6ADA3651BE3473F0002AC3E /* Model4TO5.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = C6ADA3641BE3473F0002AC3E /* Model4TO5.xcmappingmodel */; };
 		CE02C659E4CF708EEA598F16 /* Pods_TestCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69392655FC33B1B6C1344C63 /* Pods_TestCoreData.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		C6606D321BD9E5EA009C01A4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C6ADA3581BE206FB0002AC3E /* Model3TO4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model3TO4.xcmappingmodel; sourceTree = "<group>"; };
 		C6ADA3631BE310A00002AC3E /* TestCoreData 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TestCoreData 5.xcdatamodel"; sourceTree = "<group>"; };
+		C6ADA3641BE3473F0002AC3E /* Model4TO5.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model4TO5.xcmappingmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C6ADA3581BE206FB0002AC3E /* Model3TO4.xcmappingmodel */,
+				C6ADA3641BE3473F0002AC3E /* Model4TO5.xcmappingmodel */,
 			);
 			path = Mapping;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				C60A8E1B1BD782C7001B5CB0 /* ViewController.swift in Sources */,
 				C6ADA3591BE206FB0002AC3E /* Model3TO4.xcmappingmodel in Sources */,
+				C6ADA3651BE3473F0002AC3E /* Model4TO5.xcmappingmodel in Sources */,
 				C605590B1BD8898F00FE851D /* Department+CoreDataProperties.swift in Sources */,
 				C605590C1BD8898F00FE851D /* Department.swift in Sources */,
 				C60A8E371BD7A862001B5CB0 /* TestCoreData.xcdatamodeld in Sources */,
